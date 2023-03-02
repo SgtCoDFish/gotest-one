@@ -1,6 +1,6 @@
 module github.com/sgtcodfish/gotest-one/cmd
 
-go 1.20
+go 1.19
 
 require github.com/sgtcodfish/gotest-one v0.0.0
 
