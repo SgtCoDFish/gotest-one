@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/sgtcodfish/gotest-one/caser"
+	"github.com/sgtcodfish/gotest-one/cmd/app"
 )
 
 func main() {
@@ -15,6 +15,6 @@ func main() {
 	}
 
 	for _, s := range src {
-		fmt.Println(caser.Dutch(s))
+		fmt.Println(app.Transformer(s))
 	}
 }

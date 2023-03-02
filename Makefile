@@ -11,7 +11,7 @@ BINDIR := _bin
 build: $(BINDIR)/main
 
 $(BINDIR)/main: cmd/main.go caser/caser.go cmd/go.mod cmd/go.sum go.mod go.sum | $(BINDIR)
-	CGO_ENABLED=0 go build -o $@ $<
+	cd cmd && CGO_ENABLED=0 go build -o ../$@ main.go
 
 .PHONY: tidy
 tidy:
